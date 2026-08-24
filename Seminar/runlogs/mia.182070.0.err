@@ -1,0 +1,6 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.83s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.80s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.95s/it]
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Traceback (most recent call last):
+  File "/home/ppllm26_team000/Seminar/Llama3.py", line 25, in <module>
+    diction = {"prompt_"+i:resp}
+TypeError: can only concatenate str (not "int") to str

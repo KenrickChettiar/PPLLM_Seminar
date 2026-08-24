@@ -1,0 +1,68 @@
+[transformers] Disabling PyTorch because PyTorch >= 2.5 is required but found 2.3.1
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-6a858c9d-697eea536d098f761b416156;cd2ac13e-3b4b-41ea-a006-78fad0689a0b)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B-Instruct is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct.
+401 Client Error. (Request ID: Root=1-6a858c9d-697eea536d098f761b416156;cd2ac13e-3b4b-41ea-a006-78fad0689a0b)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B-Instruct is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+During handling of the above exception, another exception occurred:
+
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ppllm26_team000/.local/lib/python3.10/site-packages/transformers/utils/hub.py", line 438, in cached_files
+    hf_hub_download(
+  File "/home/ppllm26_team000/.local/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/ppllm26_team000/.local/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1019, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/home/ppllm26_team000/.local/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1166, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/home/ppllm26_team000/.local/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1905, in _raise_on_head_call_error
+    raise head_call_error
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-6a858c9d-0afa1cb86193231076f8a217;59f40056-b2d2-4e36-90f6-46818e86b9ad)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B-Instruct is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ppllm26_team000/Seminar/Llama3.py", line 7, in <module>
+    tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-3.2-3B-Instruct")
+  File "/home/ppllm26_team000/.local/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 772, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "/home/ppllm26_team000/.local/lib/python3.10/site-packages/transformers/configuration_utils.py", line 704, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/ppllm26_team000/.local/lib/python3.10/site-packages/transformers/configuration_utils.py", line 745, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/ppllm26_team000/.local/lib/python3.10/site-packages/transformers/configuration_utils.py", line 800, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/home/ppllm26_team000/.local/lib/python3.10/site-packages/transformers/utils/hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/home/ppllm26_team000/.local/lib/python3.10/site-packages/transformers/utils/hub.py", line 511, in cached_files
+    raise OSError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct.
+401 Client Error. (Request ID: Root=1-6a858c9d-0afa1cb86193231076f8a217;59f40056-b2d2-4e36-90f6-46818e86b9ad)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B-Instruct is restricted. You must have access to it and be authenticated to access it. Please log in.

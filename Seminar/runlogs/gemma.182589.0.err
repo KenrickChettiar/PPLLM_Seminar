@@ -1,0 +1,2 @@
+Error: [Errno 2] No such file or directory: '/home/ppllm26_team000/envs/gemma/bin/python'
+/home/ppllm26_team000/Seminar/run_gemma.sh: /home/ppllm26_team000/envs/gemma/bin/pip: /home/ppllm26_team000/envs/gemma/bin/python3: bad interpreter: No such file or directory

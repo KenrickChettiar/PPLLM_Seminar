@@ -1,0 +1,8 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.85s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.79s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.95s/it]
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Traceback (most recent call last):
+  File "/home/ppllm26_team000/Seminar/getbaseQwen10pointscores.py", line 25, in <module>
+    with open("/home/ppllm26_team000/results/10pointscoring/Qwen.txt","a") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ppllm26_team000/results/10pointscoring/Qwen.txt'

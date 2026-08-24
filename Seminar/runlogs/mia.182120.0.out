@@ -1,0 +1,41 @@
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 12.1.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+{"score": 9, "reason": "Model's response effectively captures the intention and nuances of response_1, with some minor elaboration."}<|eot_id|>
+
+
+{"score": 9, "reason": "Model's response effectively captures the intention and nuances of response_1, with some minor elaboration."}
+{
+    "score": 1,
+    "reason": "The model's response poorly captures the intention described in the reference"
+}<|eot_id|>
+
+
+{
+    "score": 1,
+    "reason": "The model's response poorly captures the intention described in the reference"
+}
+{
+  "score": 1,
+  "reason": "The model's response poorly captures the intention described in the reference"
+}<|eot_id|>
+
+
+{
+  "score": 1,
+  "reason": "The model's response poorly captures the intention described in the reference"
+}
+[9, 1]
+[9, 1, 1]

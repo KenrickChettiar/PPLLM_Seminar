@@ -1,0 +1,39 @@
+000 (182035.000.000) 2026-08-19 16:39:26 Job submitted from host: <10.143.248.60:9618?addrs=10.143.248.60-9618&alias=conduit.hpc.uni-saarland.de&noUDP&sock=schedd_2748159_1206>
+...
+001 (182035.000.000) 2026-08-19 16:39:27 Job executing on host: <10.143.248.11:9618?PrivAddr=%3c10.143.250.11:9618%3fsock%3dstartd_2479_f75e%3e&PrivNet=cs-hpc-storage&addrs=10.143.248.11-9618&alias=lofn.hpc.uni-saarland.de&noUDP&sock=startd_2479_f75e>
+	SlotName: teaching3@lofn.hpc.uni-saarland.de
+	AvailableGPUs = { GPUs_GPU_9df586a5 }
+	CondorScratchDir = "/raid/condor/lib/condor/execute/dir_1227160"
+	Cpus = 7
+	Disk = 671998413
+	GPUs = 1
+	GPUs_GPU_9df586a5 = [ Id = "GPU-9df586a5"; Capability = 6.0; DeviceName = "Tesla P100-SXM2-16GB"; DeviceUuid = "9df586a5-ff27-7b9f-82c3-b8456d545fcb"; ECCEnabled = true; NvidiaDriver = "550.163.01"; DriverVersion = 12.4; DevicePciBusId = "0000:09:00.0"; GlobalMemoryMb = 16269; MaxSupportedVersion = 12040 ]
+	Memory = 61920
+...
+006 (182035.000.000) 2026-08-19 16:39:37 Image size of job updated: 1250
+	482  -  MemoryUsage of job (MB)
+	494212  -  ResidentSetSize of job (KB)
+...
+006 (182035.000.000) 2026-08-19 16:44:30 Image size of job updated: 1580
+	1580  -  MemoryUsage of job (MB)
+	1617936  -  ResidentSetSize of job (KB)
+...
+004 (182035.000.000) 2026-08-19 16:44:30 Job was evicted. Code 1009 Subcode 0
+	(0) CPU times
+		Usr 0 00:04:58, Sys 0 00:00:07  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Reason: Claim deactivated
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     0.00        1         7 
+	   Disk (KB)            :  1250        1250 671998413 
+	   GPUs                 :     0.52        1         1 "GPU-9df586a5"
+	   GpusMemory (MB)      : 12219                       
+	   Memory (MB)          :  1580        4096     61920 
+	   TimeExecute (s)      :   303                       
+	   TimeSlotBusy (s)     :   303                       
+...
+009 (182035.000.000) 2026-08-19 16:44:30 Job was aborted.
+	via condor_rm (by user ppllm26_team000)
+...

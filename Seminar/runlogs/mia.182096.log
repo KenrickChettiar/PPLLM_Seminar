@@ -1,0 +1,38 @@
+000 (182096.000.000) 2026-08-19 21:29:59 Job submitted from host: <10.143.248.60:9618?addrs=10.143.248.60-9618&alias=conduit.hpc.uni-saarland.de&noUDP&sock=schedd_2748159_1206>
+...
+001 (182096.000.000) 2026-08-19 21:29:59 Job executing on host: <10.143.248.11:9618?PrivAddr=%3c10.143.250.11:9618%3fsock%3dstartd_2479_f75e%3e&PrivNet=cs-hpc-storage&addrs=10.143.248.11-9618&alias=lofn.hpc.uni-saarland.de&noUDP&sock=startd_2479_f75e>
+	SlotName: teaching2@lofn.hpc.uni-saarland.de
+	AvailableGPUs = { GPUs_GPU_f968d76a }
+	CondorScratchDir = "/raid/condor/lib/condor/execute/dir_1423722"
+	Cpus = 7
+	Disk = 671998413
+	GPUs = 1
+	GPUs_GPU_f968d76a = [ Id = "GPU-f968d76a"; Capability = 6.0; DeviceName = "Tesla P100-SXM2-16GB"; DeviceUuid = "f968d76a-7475-2218-7b77-16ed4b0507fe"; ECCEnabled = true; NvidiaDriver = "550.163.01"; DriverVersion = 12.4; DevicePciBusId = "0000:05:00.0"; GlobalMemoryMb = 16269; MaxSupportedVersion = 12040 ]
+	Memory = 61920
+...
+006 (182096.000.000) 2026-08-19 21:30:08 Image size of job updated: 1250
+	390  -  MemoryUsage of job (MB)
+	399760  -  ResidentSetSize of job (KB)
+...
+006 (182096.000.000) 2026-08-19 21:30:36 Image size of job updated: 1250
+	1145  -  MemoryUsage of job (MB)
+	1172820  -  ResidentSetSize of job (KB)
+...
+005 (182096.000.000) 2026-08-19 21:30:36 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:33, Sys 0 00:00:08  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:33, Sys 0 00:00:08  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :        0        1         7 
+	   Disk (KB)            :     1250     1250 671998413 
+	   GPUs                 :                 1         1 "GPU-f968d76a"
+	   Memory (MB)          :     1145     4096     61920 
+	   TimeExecute (s)      :       37                    
+	   TimeSlotBusy (s)     :       37                    
+...

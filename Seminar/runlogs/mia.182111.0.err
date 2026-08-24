@@ -1,0 +1,12 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.97s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.81s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.98s/it]
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Traceback (most recent call last):
+  File "/home/ppllm26_team000/Seminar/getbaseQwen10pointscores.py", line 10, in <module>
+    judgeLlama3model.judgeLlama3(prompts,"BaseQwentojudgeLlama3")
+  File "/home/ppllm26_team000/Seminar/judgeLlama3model.py", line 27, in judgeLlama3
+    score = json.loads(resp)['score']
+  File "/opt/conda/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/opt/conda/lib/python3.10/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 4 column 2 (char 171)

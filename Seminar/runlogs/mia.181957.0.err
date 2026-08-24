@@ -1,0 +1,4 @@
+  File "/home/ppllm26_team000/Seminar/run.sh", line 1
+    pip install datasets
+        ^^^^^^^
+SyntaxError: invalid syntax

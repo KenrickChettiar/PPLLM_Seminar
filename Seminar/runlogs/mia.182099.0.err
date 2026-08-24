@@ -1,0 +1,6 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.35s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.77s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.86s/it]
+Traceback (most recent call last):
+  File "/home/ppllm26_team000/Seminar/getbaseLlama310pointscores.py", line 18, in <module>
+    scores.append(list(e.values())[17])
+IndexError: list index out of range

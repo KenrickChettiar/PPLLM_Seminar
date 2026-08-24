@@ -1,0 +1,15 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.11s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.90s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.08s/it]
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Traceback (most recent call last):
+  File "/home/ppllm26_team000/Seminar/getbaseQwen10pointscores.py", line 10, in <module>
+    judgeLlama3model.judgeLlama3(prompts,"BaseQwentojudgeLlama3")
+  File "/home/ppllm26_team000/Seminar/judgeLlama3model.py", line 28, in judgeLlama3
+    model_intentions.append(json.loads(resp)['score'])
+  File "/opt/conda/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/opt/conda/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/opt/conda/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 3 column 130 (char 145)

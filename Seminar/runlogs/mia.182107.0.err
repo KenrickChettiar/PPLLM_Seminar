@@ -1,0 +1,6 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.47s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.95s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.03s/it]
+Traceback (most recent call last):
+  File "/home/ppllm26_team000/Seminar/getbaseLlama310pointscores.py", line 24, in <module>
+    with open("/home/ppllm26_team000/results/10pointscoring/Llama.txt","a") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ppllm26_team000/results/10pointscoring/Llama.txt'

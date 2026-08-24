@@ -1,0 +1,19 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.22s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.97s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.16s/it]
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Traceback (most recent call last):
+  File "/home/ppllm26_team000/Seminar/Llama3.py", line 28, in <module>
+    json.dump(model_intentions,f, ensure_ascii=False, indent=4)
+  File "/opt/conda/lib/python3.10/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/opt/conda/lib/python3.10/json/encoder.py", line 429, in _iterencode
+    yield from _iterencode_list(o, _current_indent_level)
+  File "/opt/conda/lib/python3.10/json/encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "/opt/conda/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/opt/conda/lib/python3.10/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/opt/conda/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type set is not JSON serializable

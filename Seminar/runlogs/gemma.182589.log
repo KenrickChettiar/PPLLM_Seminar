@@ -1,0 +1,31 @@
+000 (182589.000.000) 2026-08-24 15:26:25 Job submitted from host: <10.143.248.60:9618?addrs=10.143.248.60-9618&alias=conduit.hpc.uni-saarland.de&noUDP&sock=schedd_2748159_1206>
+...
+001 (182589.000.000) 2026-08-24 15:26:27 Job executing on host: <10.143.248.15:9618?PrivAddr=%3c10.143.250.15:9618%3fsock%3dstartd_2204_56d2%3e&PrivNet=cs-hpc-storage&addrs=10.143.248.15-9618&alias=thera.hpc.uni-saarland.de&noUDP&sock=startd_2204_56d2>
+	SlotName: teaching6@thera.hpc.uni-saarland.de
+	AvailableGPUs = { GPUs_GPU_c3fa5d7a }
+	CondorScratchDir = "/raid/condor/lib/condor/execute/dir_170578"
+	Cpus = 7
+	Disk = 414954411
+	GPUs = 1
+	GPUs_GPU_c3fa5d7a = [ Id = "GPU-c3fa5d7a"; Capability = 6.0; DeviceName = "Tesla P100-SXM2-16GB"; DeviceUuid = "c3fa5d7a-6c9f-8d89-61b5-d3e57ee1ad77"; ECCEnabled = true; NvidiaDriver = "550.163.01"; DriverVersion = 12.4; DevicePciBusId = "0000:86:00.0"; GlobalMemoryMb = 16269; MaxSupportedVersion = 12040 ]
+	Memory = 96737
+...
+005 (182589.000.000) 2026-08-24 15:26:29 Job terminated.
+	(1) Normal termination (return value 126)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     0.01        2         7 
+	   Disk (KB)            :  1250        1250 414954411 
+	   GPUs                 :     0           1         1 "GPU-c3fa5d7a"
+	   GpusMemory (MB)      :   117                       
+	   Memory (MB)          :             16384     96737 
+	   TimeExecute (s)      :     1                       
+	   TimeSlotBusy (s)     :     3                       
+...

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/ppllm26_team000/Seminar/Gemma.py", line 1, in <module>
+    from transformers import AutoProcessor, AutoModelForMultimodalLM
+ImportError: cannot import name 'AutoModelForMultimodalLM' from 'transformers' (/home/ppllm26_team000/.local/lib/python3.10/site-packages/transformers/__init__.py)

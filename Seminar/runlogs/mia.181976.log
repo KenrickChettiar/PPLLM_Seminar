@@ -1,0 +1,57 @@
+000 (181976.000.000) 2026-08-19 13:07:06 Job submitted from host: <10.143.248.60:9618?addrs=10.143.248.60-9618&alias=conduit.hpc.uni-saarland.de&noUDP&sock=schedd_2748159_1206>
+...
+040 (181976.000.000) 2026-08-19 13:07:07 Finished transferring input files
+...
+001 (181976.000.000) 2026-08-19 13:07:08 Job executing on host: <10.143.248.11:9618?PrivAddr=%3c10.143.250.11:9618%3fsock%3dstartd_2479_f75e%3e&PrivNet=cs-hpc-storage&addrs=10.143.248.11-9618&alias=lofn.hpc.uni-saarland.de&noUDP&sock=startd_2479_f75e>
+	SlotName: teaching3@lofn.hpc.uni-saarland.de
+	AvailableGPUs = { GPUs_GPU_9df586a5 }
+	CondorScratchDir = "/raid/condor/lib/condor/execute/dir_1081081"
+	Cpus = 7
+	Disk = 671998413
+	GPUs = 1
+	GPUs_GPU_9df586a5 = [ Id = "GPU-9df586a5"; Capability = 6.0; DeviceName = "Tesla P100-SXM2-16GB"; DeviceUuid = "9df586a5-ff27-7b9f-82c3-b8456d545fcb"; ECCEnabled = true; NvidiaDriver = "550.163.01"; DriverVersion = 12.4; DevicePciBusId = "0000:09:00.0"; GlobalMemoryMb = 16269; MaxSupportedVersion = 12040 ]
+	Memory = 61920
+...
+006 (181976.000.000) 2026-08-19 13:07:16 Image size of job updated: 1250
+	0  -  MemoryUsage of job (MB)
+	324  -  ResidentSetSize of job (KB)
+...
+006 (181976.000.000) 2026-08-19 13:12:16 Image size of job updated: 2861
+	2861  -  MemoryUsage of job (MB)
+	2930312  -  ResidentSetSize of job (KB)
+...
+006 (181976.000.000) 2026-08-19 13:22:17 Image size of job updated: 2891
+	2891  -  MemoryUsage of job (MB)
+	2961244  -  ResidentSetSize of job (KB)
+...
+006 (181976.000.000) 2026-08-19 13:27:17 Image size of job updated: 2996
+	2996  -  MemoryUsage of job (MB)
+	3068552  -  ResidentSetSize of job (KB)
+...
+006 (181976.000.000) 2026-08-19 13:32:17 Image size of job updated: 3000
+	3000  -  MemoryUsage of job (MB)
+	3072248  -  ResidentSetSize of job (KB)
+...
+040 (181976.000.000) 2026-08-19 13:57:49 Started transferring output files
+...
+040 (181976.000.000) 2026-08-19 13:57:49 Finished transferring output files
+...
+005 (181976.000.000) 2026-08-19 13:57:50 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:59, Sys 0 00:00:40  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:59, Sys 0 00:00:40  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	3924  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	3924  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     0.00        1         7 
+	   Disk (KB)            :    25        1250 671998413 
+	   GPUs                 :     0           1         1 "GPU-9df586a5"
+	   GpusMemory (MB)      :   117                       
+	   Memory (MB)          :  3000        4096     61920 
+	   TimeExecute (s)      :  3041                       
+	   TimeSlotBusy (s)     :  3042                       
+...

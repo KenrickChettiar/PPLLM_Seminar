@@ -1,0 +1,114 @@
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 12.1.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: torch in /opt/conda/lib/python3.10/site-packages (2.3.1)
+Requirement already satisfied: torchvision in /opt/conda/lib/python3.10/site-packages (0.18.1)
+Requirement already satisfied: torchaudio in /opt/conda/lib/python3.10/site-packages (2.3.1)
+Collecting transformers
+  Downloading transformers-5.15.0-py3-none-any.whl.metadata (32 kB)
+Requirement already satisfied: datasets in /home/ppllm26_team000/.local/lib/python3.10/site-packages (5.0.1)
+Requirement already satisfied: pandas in /home/ppllm26_team000/.local/lib/python3.10/site-packages (2.3.3)
+Collecting peft
+  Downloading peft-0.20.0-py3-none-any.whl.metadata (14 kB)
+Collecting accelerate
+  Downloading accelerate-1.14.0-py3-none-any.whl.metadata (19 kB)
+Requirement already satisfied: huggingface_hub in /home/ppllm26_team000/.local/lib/python3.10/site-packages (1.28.0)
+Requirement already satisfied: filelock in /opt/conda/lib/python3.10/site-packages (from torch) (3.13.1)
+Requirement already satisfied: typing-extensions>=4.8.0 in /opt/conda/lib/python3.10/site-packages (from torch) (4.11.0)
+Requirement already satisfied: sympy in /opt/conda/lib/python3.10/site-packages (from torch) (1.12.1)
+Requirement already satisfied: networkx in /opt/conda/lib/python3.10/site-packages (from torch) (3.2.1)
+Requirement already satisfied: jinja2 in /opt/conda/lib/python3.10/site-packages (from torch) (3.1.4)
+Requirement already satisfied: fsspec in /opt/conda/lib/python3.10/site-packages (from torch) (2024.6.0)
+Requirement already satisfied: numpy in /opt/conda/lib/python3.10/site-packages (from torchvision) (1.26.4)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in /opt/conda/lib/python3.10/site-packages (from torchvision) (10.3.0)
+Requirement already satisfied: packaging>=20.0 in /opt/conda/lib/python3.10/site-packages (from transformers) (23.2)
+Requirement already satisfied: pyyaml>=5.1 in /opt/conda/lib/python3.10/site-packages (from transformers) (6.0.1)
+Collecting regex>=2025.10.22 (from transformers)
+  Downloading regex-2026.7.19-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.5/40.5 kB 2.4 MB/s eta 0:00:00
+Collecting tokenizers<=0.23.0,>=0.22.0 (from transformers)
+  Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)
+Collecting typer (from transformers)
+  Downloading typer-0.27.1-py3-none-any.whl.metadata (16 kB)
+Collecting safetensors>=0.8.0 (from transformers)
+  Downloading safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.2 kB)
+Requirement already satisfied: tqdm>=4.60 in /opt/conda/lib/python3.10/site-packages (from transformers) (4.66.4)
+Requirement already satisfied: pyarrow>=21.0.0 in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from datasets) (25.0.1)
+Requirement already satisfied: dill<0.4.2,>=0.3.0 in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from datasets) (0.4.1)
+Requirement already satisfied: requests>=2.32.2 in /opt/conda/lib/python3.10/site-packages (from datasets) (2.32.2)
+Requirement already satisfied: httpx<1.0.0 in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from datasets) (0.28.1)
+Requirement already satisfied: xxhash in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from datasets) (4.0.1)
+Requirement already satisfied: multiprocess<0.70.20 in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from datasets) (0.70.19)
+Requirement already satisfied: python-dateutil>=2.8.2 in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /opt/conda/lib/python3.10/site-packages (from pandas) (2024.1)
+Requirement already satisfied: tzdata>=2022.7 in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from pandas) (2026.3)
+Requirement already satisfied: psutil in /opt/conda/lib/python3.10/site-packages (from peft) (5.9.0)
+Requirement already satisfied: click<9.0.0,>=8.4.2 in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from huggingface_hub) (8.4.2)
+Requirement already satisfied: hf-xet<2.0.0,>=1.5.2 in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from huggingface_hub) (1.6.0)
+Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from fsspec[http]<=2026.6.0,>=2023.1.0->datasets) (3.14.3)
+Requirement already satisfied: anyio in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from httpx<1.0.0->datasets) (4.14.2)
+Requirement already satisfied: certifi in /opt/conda/lib/python3.10/site-packages (from httpx<1.0.0->datasets) (2024.2.2)
+Requirement already satisfied: httpcore==1.* in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from httpx<1.0.0->datasets) (1.0.9)
+Requirement already satisfied: idna in /opt/conda/lib/python3.10/site-packages (from httpx<1.0.0->datasets) (3.7)
+Requirement already satisfied: h11>=0.16 in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from httpcore==1.*->httpx<1.0.0->datasets) (0.16.0)
+Requirement already satisfied: six>=1.5 in /opt/conda/lib/python3.10/site-packages (from python-dateutil>=2.8.2->pandas) (1.16.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in /opt/conda/lib/python3.10/site-packages (from requests>=2.32.2->datasets) (2.0.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /opt/conda/lib/python3.10/site-packages (from requests>=2.32.2->datasets) (2.2.1)
+Requirement already satisfied: MarkupSafe>=2.0 in /opt/conda/lib/python3.10/site-packages (from jinja2->torch) (2.1.3)
+Requirement already satisfied: mpmath<1.4.0,>=1.1.0 in /opt/conda/lib/python3.10/site-packages (from sympy->torch) (1.3.0)
+Collecting shellingham>=1.3.0 (from typer->transformers)
+  Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting rich>=13.8.0 (from typer->transformers)
+  Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting annotated-doc>=0.0.2 (from typer->transformers)
+  Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.6.0,>=2023.1.0->datasets) (2.7.1)
+Requirement already satisfied: aiosignal>=1.4.0 in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.6.0,>=2023.1.0->datasets) (1.4.0)
+Requirement already satisfied: async-timeout<6.0,>=4.0 in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.6.0,>=2023.1.0->datasets) (5.0.1)
+Requirement already satisfied: attrs>=17.3.0 in /opt/conda/lib/python3.10/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.6.0,>=2023.1.0->datasets) (23.1.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.6.0,>=2023.1.0->datasets) (1.8.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.6.0,>=2023.1.0->datasets) (6.7.1)
+Requirement already satisfied: propcache>=0.2.0 in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.6.0,>=2023.1.0->datasets) (0.5.2)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in /home/ppllm26_team000/.local/lib/python3.10/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.6.0,>=2023.1.0->datasets) (1.24.5)
+Collecting markdown-it-py>=2.2.0 (from rich>=13.8.0->typer->transformers)
+  Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /opt/conda/lib/python3.10/site-packages (from rich>=13.8.0->typer->transformers) (2.15.1)
+Requirement already satisfied: exceptiongroup>=1.0.2 in /opt/conda/lib/python3.10/site-packages (from anyio->httpx<1.0.0->datasets) (1.2.0)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.8.0->typer->transformers)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading transformers-5.15.0-py3-none-any.whl (11.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.7/11.7 MB 1.1 MB/s eta 0:00:00
+Downloading peft-0.20.0-py3-none-any.whl (775 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 775.8/775.8 kB 36.6 MB/s eta 0:00:00
+Downloading accelerate-1.14.0-py3-none-any.whl (389 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 389.2/389.2 kB 22.4 MB/s eta 0:00:00
+Downloading regex-2026.7.19-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (793 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 793.5/793.5 kB 29.5 MB/s eta 0:00:00
+Downloading safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (516 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 516.0/516.0 kB 26.5 MB/s eta 0:00:00
+Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 36.7 MB/s eta 0:00:00
+Downloading typer-0.27.1-py3-none-any.whl (122 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 122.9/122.9 kB 13.9 MB/s eta 0:00:00
+Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.7/310.7 kB 30.7 MB/s eta 0:00:00
+Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.7/91.7 kB 9.7 MB/s eta 0:00:00
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: shellingham, safetensors, regex, mdurl, annotated-doc, markdown-it-py, rich, typer, tokenizers, accelerate, transformers, peft
+Successfully installed accelerate-1.14.0 annotated-doc-0.0.5 markdown-it-py-4.2.0 mdurl-0.1.2 peft-0.20.0 regex-2026.7.19 rich-15.0.0 safetensors-0.8.0 shellingham-1.5.4 tokenizers-0.22.2 transformers-5.15.0 typer-0.27.1

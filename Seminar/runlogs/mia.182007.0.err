@@ -1,0 +1,8 @@
+Downloading shards:   0%|          | 0/2 [00:00<?, ?it/s]Downloading shards:  50%|█████     | 1/2 [42:06<42:06, 2526.56s/it]Downloading shards: 100%|██████████| 2/2 [1:06:14<00:00, 1892.04s/it]Downloading shards: 100%|██████████| 2/2 [1:06:14<00:00, 1987.21s/it]
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.90s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:08<00:00,  4.07s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:08<00:00,  4.50s/it]
+/home/ppllm26_team000/Seminar/run.sh: line 3: erate: command not found
+Traceback (most recent call last):
+  File "/home/ppllm26_team000/Seminar/Gemma.py", line 1, in <module>
+    from transformers import AutoProcessor, AutoModelForMultimodalLM
+ImportError: cannot import name 'AutoModelForMultimodalLM' from 'transformers' (/home/ppllm26_team000/.local/lib/python3.10/site-packages/transformers/__init__.py)

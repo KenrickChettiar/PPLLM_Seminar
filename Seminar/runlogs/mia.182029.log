@@ -1,0 +1,43 @@
+000 (182029.000.000) 2026-08-19 16:14:41 Job submitted from host: <10.143.248.60:9618?addrs=10.143.248.60-9618&alias=conduit.hpc.uni-saarland.de&noUDP&sock=schedd_2748159_1206>
+...
+001 (182029.000.000) 2026-08-19 16:14:49 Job executing on host: <10.143.248.11:9618?PrivAddr=%3c10.143.250.11:9618%3fsock%3dstartd_2479_f75e%3e&PrivNet=cs-hpc-storage&addrs=10.143.248.11-9618&alias=lofn.hpc.uni-saarland.de&noUDP&sock=startd_2479_f75e>
+	SlotName: teaching2@lofn.hpc.uni-saarland.de
+	AvailableGPUs = { GPUs_GPU_f968d76a }
+	CondorScratchDir = "/raid/condor/lib/condor/execute/dir_1209634"
+	Cpus = 7
+	Disk = 671998413
+	GPUs = 1
+	GPUs_GPU_f968d76a = [ Id = "GPU-f968d76a"; Capability = 6.0; DeviceName = "Tesla P100-SXM2-16GB"; DeviceUuid = "f968d76a-7475-2218-7b77-16ed4b0507fe"; ECCEnabled = true; NvidiaDriver = "550.163.01"; DriverVersion = 12.4; DevicePciBusId = "0000:05:00.0"; GlobalMemoryMb = 16269; MaxSupportedVersion = 12040 ]
+	Memory = 61920
+...
+006 (182029.000.000) 2026-08-19 16:14:57 Image size of job updated: 1250
+	48  -  MemoryUsage of job (MB)
+	49164  -  ResidentSetSize of job (KB)
+...
+006 (182029.000.000) 2026-08-19 16:19:58 Image size of job updated: 1250
+	51  -  MemoryUsage of job (MB)
+	53200  -  ResidentSetSize of job (KB)
+...
+006 (182029.000.000) 2026-08-19 16:24:59 Image size of job updated: 1250
+	51  -  MemoryUsage of job (MB)
+	53216  -  ResidentSetSize of job (KB)
+...
+004 (182029.000.000) 2026-08-19 16:26:32 Job was evicted. Code 1009 Subcode 0
+	(0) CPU times
+		Usr 0 00:00:24, Sys 0 00:00:04  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Reason: Claim deactivated
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     0.00        1         7 
+	   Disk (KB)            :  1250        1250 671998413 
+	   GPUs                 :     0           1         1 "GPU-f968d76a"
+	   GpusMemory (MB)      :   117                       
+	   Memory (MB)          :    51        4096     61920 
+	   TimeExecute (s)      :   703                       
+	   TimeSlotBusy (s)     :   703                       
+...
+009 (182029.000.000) 2026-08-19 16:26:32 Job was aborted.
+	via condor_rm (by user ppllm26_team000)
+...

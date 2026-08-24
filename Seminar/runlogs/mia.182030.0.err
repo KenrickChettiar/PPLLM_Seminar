@@ -1,0 +1,14 @@
+[transformers] Disabling PyTorch because PyTorch >= 2.5 is required but found 2.3.1
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Traceback (most recent call last):
+  File "/home/ppllm26_team000/Seminar/Llama3.py", line 9, in <module>
+    model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-3.2-3B-Instruct", device_map="auto")
+  File "/home/ppllm26_team000/.local/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 2363, in __getattribute__
+    requires_backends(cls, cls._backends)
+  File "/home/ppllm26_team000/.local/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 2349, in requires_backends
+    raise ImportError("".join(failed))
+ImportError: 
+AutoModelForCausalLM requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+
